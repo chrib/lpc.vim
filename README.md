@@ -12,3 +12,16 @@ eingefuegt werden
 autocmd BufNewFile,BufRead ~/mud/mudlib/*.[c|h]
 	\ set filetype=lpc
 ```
+Alternativ kann man auch unter ~/.vim/ftdetect eine Datei namens. lpc.vim
+mit folgenden Inhalt anlegen.
+
+```vim
+autocmd BufNewFile,BufRead ~/mud/mudlib/*.[c|h]
+        \ set filetype=lpc
+
+" Tabstop, Shiftwidth und Softtabstop 2 Zeichen, Textwidth 78 Zeichen
+" Tabstops als Spaces einfuegen
+autocmd BufEnter ~/mud/mudlib/*.[c|h] set ts=2 sw=2 sts=2 tw=78 expandtab
+```
+
+
