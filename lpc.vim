@@ -36,7 +36,7 @@ syn keyword lpcTodo contained	TODO FIXME XXX HIER BUG
 syn keyword lpcBool 		true false TRUE FALSE ERFOLG MISSERFOLG
 
 " obsolete efuns und lfuns anmeckern
-syn keyword lpcObsolete add_verb add_xverb allocate_mapping assoc copy_mapping creator creator_file define_include_dirs efun308 exclude_array extract file_name filter_array filter_array.eng filter_mapping get_root_uid initialisation intersect_alist is_clone m_sizeof m_width map_array map_mapping mapping_contains member_array obsolete order_alist parse_command query_imp_port receive_imp send_imp set_auto_include_string slice_array nextgroup=lpcEfunParen
+syn keyword lpcObsolete add_verb add_xverb allocate_mapping assoc copy_mapping creator creator_file define_include_dirs efun308 exclude_array extract file_name filter_array filter_array.eng filter_mapping get_root_uid initialisation intersect_alist is_clone m_sizeof m_width map_array map_mapping mapping_contains member_array obsolete order_alist parse_command query_imp_port receive_imp send_imp set_auto_include_string slice_array paramove AddHpHook NotifyHpChange RemoveHpHook ModifySkillAttributeOld nextgroup=lpcEfunParen
 
 " Zeichenketten und Charakter-Konstanten, groesstenteils der C-Syntaxdatei
 " entnommen. Sehr praktisch ist die Sonderbehandlung von \n u.ae.
