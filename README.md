@@ -3,9 +3,9 @@ lpc.vim
 
 LPC-Syntax fuer MG-Mudlib
 
-Die Syntaxdatei gehoert unter ~/.vim/syntax. Da LPC die gleiche Dateiendung
+Die Syntaxdatei gehoert unter `~/.vim/syntax`. Da LPC die gleiche Dateiendung
 wie C nutzt, will man wahrscheinlich nur die LPC-Syntax haben, wenn man sich
-im Mudlib-Verzeichnis befindet. Hierzu muss folgender Code in die ~/.vimrc
+im Mudlib-Verzeichnis befindet. Hierzu muss folgender Code in die `~/.vimrc`
 eingefuegt werden
 
 ```vim
@@ -29,7 +29,7 @@ dem allgemeinen Syntaxdatei einbauen, diese wird aber u.U. ueberschrieben.
 Sinnvoller ist es, die eigenen Definitionen auszulagern. Vim bietet hierfuer
 einen Mechanismus an.
 
-Hierzu erstellt man unter *.vim/after/syntax/* die Datei lpc.vim mit z.B.
+Hierzu erstellt man unter `~/.vim/after/syntax/` die Datei lpc.vim mit z.B.
 folgendem Inhalt
 
 ```vim
