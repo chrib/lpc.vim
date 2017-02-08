@@ -38,6 +38,9 @@ syn keyword lpcBool 		true false TRUE FALSE ERFOLG MISSERFOLG
 " obsolete efuns und lfuns anmeckern
 syn keyword lpcObsolete add_verb add_xverb allocate_mapping assoc copy_mapping creator creator_file define_include_dirs efun308 exclude_array extract file_name filter_array filter_array.eng filter_mapping get_root_uid initialisation intersect_alist is_clone m_sizeof m_width map_array map_mapping mapping_contains member_array obsolete order_alist parse_command query_imp_port receive_imp send_imp set_auto_include_string slice_array AddHpHook AddInsertHook ModifySkillAttributeOld NotifyGiveQuest NotifyHpChange QueryEnemy QueryInsertHooks QueryOptQP RemoveHpHook RemoveInsertHook TestAttributeLock extra_look paramove nextgroup=lpcEfunParen
 
+" obsolete Properties hervorheben
+syn keyword lpcObsoleteProp P_BALANCED_WEAPON P_DEFAULT_INFO P_EXTRA_LOOK P_LAST_KILLER P_LAST_PIECE_TIME P_LOG_FILE P_NEXT_SPELL_TIME P_READ_MSG P_TMP_ATTACK_HOOK P_TMP_ATTACK_MOD P_TMP_DEFEND_HOOK P_TMP_DIE_HOOK P_TMP_MOVE_HOOK nextgroup=lpcEfunParen
+
 " Zeichenketten und Charakter-Konstanten, groesstenteils der C-Syntaxdatei
 " entnommen. Sehr praktisch ist die Sonderbehandlung von \n u.ae.
 
@@ -166,6 +169,7 @@ if !exists("did_lpc_syntax_inits")
   hi lpcEfun	term=NONE ctermfg=darkcyan gui=NONE guifg=Darkcyan
   hi lpcLfun	term=NONE ctermfg=darkgreen gui=NONE guifg=Darkgreen
 	hi lpcObsolete	term=NONE ctermbg=DarkRed gui=NONE guibg=DarkRed
+	hi lpcObsoleteProp term=NONE ctermbg=red gui=NONE guibg=red
   hi link lpcStorageClass	StorageClass
   hi link lpcType		Type
   hi link lpcInclude		Include
